@@ -27,3 +27,5 @@ public class Loops {
         System.out.println("The smallest element is : " + min + " at index " + idx);
     }
 }
+
+// Testing automatic GitHub push
