@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+class Customer {
+    String name;
+    int customerID;
+    int unitsConsumed;
+
+    Customer(String name, int customerID, int unitsConsumed) {
+        this.name = name;
+        this.customerID = customerID;
+        this.unitsConsumed = unitsConsumed;
+    }
+}
+
+class ElectricityBill {
+
+    int calculateBill(Customer c) {
+        int units = c.unitsConsumed;
+        int bill;
+
+        if (units <= 100) {
+            bill = units * 2;
+        } 
+        else if (units <= 200) {
+            bill = units * 3;
+        } 
+        else if (units <= 300) {
+            bill = units * 5;
+        } 
+        else {
+            bill = units * 7;
+        }
+
+        return bill;
+    }
+
+    void display(Customer c) {
+        int totalBill = calculateBill(c);
+
+        System.out.println("\n--- Electricity Bill ---");
+        System.out.println("Customer Name: " + c.name);
+        System.out.println("Units Consumed: " + c.unitsConsumed);
+        System.out.println("Total Bill: ₹" + totalBill);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter customer name: ");
+        String name = sc.next();
+
+        System.out.print("Enter customer ID: ");
+        int customerID = sc.nextInt();
+
+        System.out.print("Enter units consumed: ");
+        int unitsConsumed = sc.nextInt();
+
+        Customer customer = new Customer(name, customerID, unitsConsumed);
+
+        ElectricityBill bill = new ElectricityBill();
+        bill.display(customer);
+
+        sc.close();
+    }
+}
