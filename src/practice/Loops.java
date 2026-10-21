@@ -1,3 +1,5 @@
+package practice;
+
 import java.util.Scanner;
 
 public class Loops {
@@ -28,4 +30,3 @@ public class Loops {
     }
 }
 
-// Testing automatic GitHub push

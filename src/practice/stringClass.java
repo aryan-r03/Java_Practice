@@ -1,3 +1,6 @@
+package practice;
+
+
 public class stringClass {
     public static void main(String[] args) {
 
