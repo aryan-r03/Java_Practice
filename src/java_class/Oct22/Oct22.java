@@ -43,11 +43,11 @@ public class Oct22 {
                 System.out.println("------------------------------------------");
             }
             catch (ArithmeticException e) {
-                System.out.println("Cannot divide by zero !");
+                System.out.println("\033[31mCannot divide by zero !\033[0m");
             }
         }
         catch (InputMismatchException e1){
-            System.out.println("Invalid Input");
+            System.out.println("\033[31mInvalid Input !! \033[0m");
         }
 
         sc.close();
