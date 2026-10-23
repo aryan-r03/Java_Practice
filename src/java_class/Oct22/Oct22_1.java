@@ -10,7 +10,7 @@ package java_class.Oct22;
 
 import java.util.*;
 
-public class Oct22 {
+public class Oct22_1 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
