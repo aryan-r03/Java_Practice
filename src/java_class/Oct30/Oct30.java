@@ -49,9 +49,9 @@ public class Oct30 {
         Delivery thread3 = new Delivery();
 
 
-        thread3.start();
-        thread2.start();
         thread1.start();
+        thread2.start();
+        thread3.start();
 
     }
 }
