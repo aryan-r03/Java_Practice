@@ -12,9 +12,8 @@ package java_class.Nov4;
 // Some message
 
 import java.io.*;
-import java.util.*;
 
-public class Nov4 {
+public class Nov4_Writer {
     public static void main(String[] args) {
         try{
             FileWriter fw = new FileWriter("info.txt");
@@ -28,13 +27,14 @@ public class Nov4 {
             fw.write("Some message Some message Some message \n");
             fw.write("Some message Some message \n");
             fw.write("Some message \n");
+            fw.write("Hui Hui Hui Hui \n");
 
             fw.close();
 
             System.out.println("The file is created and the data has been written in the file !!");
         }
         catch (Exception e){
-            System.out.println("An error has been found : " + e);
+            System.out.println("An error has been found : " + e.getMessage());
         }
     }
 }
