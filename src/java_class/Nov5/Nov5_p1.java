@@ -77,7 +77,7 @@ class Student{
 }
 
 
-public class Nov5 {
+public class Nov5_p1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
