@@ -19,7 +19,7 @@ Requirements :
                 - Total Fee
 
 Create another java class named Main outside the college package.
-Import the FeeStructure calss into Main.java.
+Import the FeeStructure class into Main.java.
 Declare a tuition fee variable in the main() method and pass its value to the FeeStructure constructor.
  */
 
